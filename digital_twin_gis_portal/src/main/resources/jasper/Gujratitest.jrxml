@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="invoice_template" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" resourceBundle="jasper.localization.i18n" uuid="cd759d20-cfa9-48d7-9532-01dc8f55f04e">
+	<property name="net.sf.jasperreports.awt.ignore.missing.font" value="true"/>
+	<parameter name="logo" class="java.io.InputStream"/>
+	<parameter name="1" class="java.io.InputStream"/>
+	<parameter name="19" class="java.io.InputStream"/>
+	<parameter name="21" class="java.io.InputStream"/>
+	<parameter name="23" class="java.io.InputStream"/>
+	<parameter name="24" class="java.io.InputStream"/>
+	<parameter name="25" class="java.io.InputStream"/>
+	<parameter name="h1" class="java.io.InputStream"/>
+	<parameter name="7" class="java.io.InputStream"/>
+	<parameter name="9" class="java.io.InputStream"/>
+	<parameter name="12" class="java.io.InputStream"/>
+	<parameter name="13" class="java.io.InputStream"/>
+	<parameter name="15" class="java.io.InputStream"/>
+	<parameter name="16" class="java.io.InputStream"/>
+	<parameter name="17" class="java.io.InputStream"/>
+	<parameter name="head" class="java.io.InputStream"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<variable name="gujarati" class="com.itextpdf.text.pdf.languages.GujaratiLigaturizer">
+		<initialValueExpression><![CDATA[new com.itextpdf.text.pdf.languages.GujaratiLigaturizer()]]></initialValueExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="618" splitType="Stretch">
+			<textField>
+				<reportElement x="45" y="3" width="434" height="59" uuid="cb1201b2-2122-4680-b5ef-4f4989073972"/>
+				<box padding="0">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$V{gujarati}.process("\u0A97\u0ABE\u0A82\u0AA7\u0AC0\u0AA8\u0A97\u0AB0 \u0AAE\u0AB9\u0ABE\u0AA8\u0A97\u0AB0\u0AAA\u0ABE\u0AB2\u0ABF\u0A95\u0ABE")]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="420" y="7" width="50" height="50" uuid="87e31e36-f1b4-44f4-9174-332e5bbd2569"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="45" y="62" width="434" height="30" uuid="d898d136-1c59-4a2f-899c-35c0d245aea3"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$V{gujarati}.process("\u0AAE\u0AB9\u0ABE\u0AA8\u0A97\u0AB0 \u0AB8\u0AC7\u0AB5\u0ABE \u0AB8\u0AA6\u0AA8, \u0AAC\u0AB9\u0AC1\u0AAE\u0ABE\u0AB3\u0AC0 \u0AAD\u0AB5\u0AA8, \u0AAA\u0AB9\u0AC7\u0AB2\u0ACB \u0AAE\u0ABE\u0AB2, \u0AB8\u0AC7\u0A95\u0ACD\u0A9F\u0AB0 -11, \u0A97\u0ABE\u0A82\u0AA7\u0AC0\u0AA8\u0A97\u0AB0.")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="156" y="121" width="143" height="40" uuid="ff9b5d06-0139-4d49-86d9-c88889bc2c5b">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="380" y="121" width="99" height="28" uuid="dc12003f-46eb-422b-9f7b-c3042e7bb3e9"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{jasper.invoice.content1.yearnote}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="149" width="99" height="20" uuid="169a0551-3e80-44a0-914d-8467d1da48f8"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="299" y="149" width="81" height="20" uuid="e713720d-f85b-4204-960a-b9e4cdfda815"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$V{gujarati}.process("\u0AB8\u0AC7\u0A95\u0ACD\u0A9F\u0AB0 \u0AA8\u0A82: ")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="189" width="80" height="20" uuid="c622d860-fbde-4ced-b060-6d6c6ecc1537"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$V{gujarati}.process("\u0AAC\u0AC0\u0AB2 \u0AA8\u0A82\u0AAC\u0AB0 ")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="201" width="110" height="20" uuid="ab2541c9-f754-47f8-8976-5c6639c3e276"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$V{gujarati}.process("\u0AB8\u0AB0\u0AA8\u0ABE\u0AAE\u0AC1\u0A82:")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="169" width="99" height="20" uuid="4e6620f3-cd5c-4b8b-8195-c08ccc571901"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="156" y="201" width="143" height="20" uuid="80cb87fe-628d-4f27-8750-315bbc394dce">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="380" y="189" width="99" height="20" uuid="cfbc0908-8366-4728-8c7e-9cdaee198f33"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="45" y="241" width="110" height="46" uuid="58663bf3-0c3f-4f16-bbd7-1f99e6d83794"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$V{gujarati}.process("\u0AAE\u0ABF\u0AB2\u0A95\u0AA4 \u0AB5\u0AC7\u0AB0\u0ACB \u0A97\u0AA3\u0AB5\u0ABE \u0AAE\u0ABE\u0A9F\u0AC7\u0AA8\u0AC1\u0A82 \u0AB8\u0AAE\u0AC0\u0A95\u0AB0\u0AA3:")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="210" width="99" height="40" uuid="b4969a71-5661-4845-8dc7-0172ea0cae62"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="380" y="250" width="99" height="28" uuid="c586d63b-4c67-411e-9079-585e8fb33cf0"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="156" y="221" width="143" height="20" uuid="4771344d-f10a-40ab-8860-c7357369e85a">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="156" y="241" width="143" height="46" uuid="4de593fa-312d-4e1a-affb-1945628cf0a3"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$R{jasper.invoice.content1.formula}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="278" width="99" height="22" uuid="76c03d10-0ba4-4355-90c1-a752a32fb529"/>
+				<box>
+					<pen lineWidth="0.25" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="45" y="221" width="110" height="20" uuid="10b1bd3c-f79f-4a60-95af-5f1dcf131a28"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$V{gujarati}.process("\u0AAE\u0ACB\u0AAC\u0ABE\u0A88\u0AB2 \u0AA8\u0A82\u0AAC\u0AB0:")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="45" y="287" width="254" height="20" uuid="3acc8721-33d1-41b2-8390-f1bfb9be7998"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$V{gujarati}.process("\u0AB8\u0AA8\u0AC7 \u0AE8\u0AE6\u0AE7\u0AEF-\u0AE8\u0AE6\u0AA8\u0ABE \u0AAE\u0ABF\u0AB2\u0A95\u0AA4 \u0AB5\u0AC7\u0AB0\u0ABE\u0AA8\u0AC0 \u0A97\u0AA3\u0AA4\u0AB0\u0AC0 \u0AAE\u0ABE\u0A9F\u0AC7\u0AA8\u0ABE \u0AB5\u0ABF\u0AB5\u0ABF\u0AA7 \u0AAA\u0AB0\u0AC0\u0AAC\u0AB3\u0ACB, \u0AB5\u0ABF\u0A97\u0AC7\u0AB0\u0AC7\u0AA8\u0AC0 \u0AAE\u0ABE\u0AB9\u0ABF\u0AA4\u0AC0")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="327" width="144" height="22" uuid="7be4740e-c3dc-4776-be81-c10e021039fd"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="155" y="349" width="144" height="20" uuid="69e91f83-9f44-4344-961a-ebf632d241b9"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="45" y="349" width="110" height="20" uuid="2977590a-5eaf-4327-a1a1-fa0083872d3c"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$V{gujarati}.process("\u0AB5\u0AC7\u0AB0\u0ABE\u0AA8\u0ACB \u0AA6\u0AB0 (R)")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="389" width="110" height="30" uuid="5477edca-5908-407a-8ce8-3178dc7b2ba0"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$V{gujarati}.process("\u0A89\u0A82\u0AAE\u0AB0\u0AA8\u0AC1\u0A82 \u0AAA\u0AB0\u0ABF\u0AAC\u0AB3 (F2)")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="369" width="144" height="20" uuid="afe3ce0f-aadf-45b2-9cbc-13338e7f013f"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="155" y="389" width="144" height="30" uuid="05071e95-706a-4a0c-a06d-2adf131bc048"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="45" y="500" width="110" height="20" backcolor="#FCD4D7" uuid="91f7a101-ce3a-4313-8f7f-121bfa2d1936">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$V{gujarati}.process("\u0A95\u0AB0\u0AA8\u0AC1\u0A82 \u0AA8\u0ABE\u0AAE")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="470" width="144" height="30" uuid="2c765428-218a-4f6e-9666-dcf30abca955"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="155" y="419" width="144" height="27" uuid="31ba4ecf-59d0-43ff-b627-c00edab7f4d4"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="45" y="420" width="110" height="26" backcolor="#C6D9F0" uuid="34ecfcaf-0e7e-4389-8ac6-a59420b5fce4"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$V{gujarati}.process("\u0AAD\u0ACB\u0A97\u0AB5\u0A9F\u0ABE\u0AA8\u0AC1\u0A82 \u0AAA\u0AB0\u0ABF\u0AAC\u0AB3 (F3)")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="446" width="144" height="24" uuid="507a4d2a-96b8-45c2-9879-b5316e847407"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="155" y="598" width="144" height="20" uuid="ab33eb99-321b-40f1-a0d6-a6db66d1bc7c"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="155" y="560" width="144" height="20" uuid="decdb14a-447e-48ee-8b84-357921ad694e"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="45" y="520" width="110" height="20" backcolor="#C6D9F0" uuid="e74e131c-7b47-459a-b5b3-af2bf20ee11f"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$V{gujarati}.process("\u0AAE\u0ABF\u0AB2\u0A95\u0AA4 \u0AB5\u0AC7\u0AB0\u0ACB")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="540" width="144" height="20" uuid="9513b471-a0de-4c83-b11a-1ba09f0543ac"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="155" y="580" width="144" height="18" uuid="d59945be-d148-4cb8-978c-438259d61d1f"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="45" y="598" width="110" height="20" backcolor="#C6D9F0" uuid="7f106edc-81c5-4f69-8e4e-8f7b1e27623b"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$V{gujarati}.process("\u0A95\u0AC1\u0AB2 \u0AAE\u0ABE\u0A82\u0A97\u0AA8\u0AC1\u0A82")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="520" width="144" height="20" uuid="a7ed683d-d361-4bc6-bcdc-c4b9137488f4"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="155" y="500" width="144" height="20" backcolor="#FCD4D7" uuid="32909e97-9dd2-429b-80b7-4b0a92eb336e">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$V{gujarati}.process("\u0A95\u0AC1\u0AB2 \u0AB0\u0A95\u0AAE")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="161" width="110" height="40" uuid="339cd989-6935-4628-b85a-affd1f97aecc"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+                    <font fontName="Arial Unicode MS" size="14"/>
+                </textElement>
+				<textFieldExpression><![CDATA[$V{gujarati}.process("\u0A93\u0A95\u0ACD\u0AAF\u0AC1\u0AAA\u0ABE\u0AAF\u0AB0 (\u0A95\u0AAC\u0A9C\u0AC7\u0AA6\u0ABE\u0AB0)\u0AA8\u0AC1\u0A82 \u0AA8\u0ABE\u0AAE :")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="156" y="161" width="143" height="40" uuid="bdfe017c-3466-4347-80b5-c0514bb1ccbc">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<paragraph leftIndent="5"/>
+				</textElement>
+			</textField>
+			<image>
+				<reportElement x="45" y="121" width="110" height="40" uuid="d9cea88c-22c7-4e52-8f27-4e066b019ddf"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0"/>
+				</box>
+				<imageExpression><![CDATA[$P{1}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="304" y="123" width="71" height="25" uuid="e9031782-593d-4980-aa55-a0d71b9256a1"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.0"/>
+				</box>
+				<imageExpression><![CDATA[$P{19}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="305" y="171" width="74" height="17" uuid="e9908c16-b075-423e-9261-bff44682efcd"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.0"/>
+				</box>
+				<imageExpression><![CDATA[$P{21}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="308" y="221" width="61" height="11" uuid="93ac0473-bd03-49c4-b6e0-6a9695d6d5ce"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.0"/>
+				</box>
+				<imageExpression><![CDATA[$P{23}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="300" y="251" width="80" height="27" uuid="c914e47d-931b-4353-b8b1-41a8ebb61bea"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.5"/>
+				</box>
+				<imageExpression><![CDATA[$P{24}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="299" y="279" width="80" height="22" uuid="70502579-86dc-45a2-9841-93d4be0a6e42"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.25"/>
+				</box>
+				<imageExpression><![CDATA[$P{25}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="45" y="307" width="254" height="20" uuid="8c37e4b1-4f05-4bc7-9754-27e5890c3c8d">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0"/>
+				</box>
+				<imageExpression><![CDATA[$P{h1}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="45" y="327" width="110" height="22" uuid="806e3bb9-ec39-4e63-ae89-f536b1316392"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0"/>
+				</box>
+				<imageExpression><![CDATA[$P{7}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="45" y="370" width="110" height="19" uuid="d9c74666-8a63-4769-a766-26eba3b5246e"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0"/>
+				</box>
+				<imageExpression><![CDATA[$P{9}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="45" y="446" width="110" height="24" uuid="ff9c3d4e-3322-4568-ac57-e9539c3999a8"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.5"/>
+				</box>
+				<imageExpression><![CDATA[$P{12}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="45" y="471" width="110" height="29" uuid="1054707b-3f00-4e0f-8ad8-b10dfeb6bdc4"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.5"/>
+				</box>
+				<imageExpression><![CDATA[$P{13}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="45" y="540" width="110" height="19" uuid="678317b6-818e-440e-8648-32b53fa1afb2"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.5"/>
+				</box>
+				<imageExpression><![CDATA[$P{15}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="45" y="559" width="110" height="20" uuid="f209cf34-e53b-4114-9d51-e57be9a49443"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.5"/>
+				</box>
+				<imageExpression><![CDATA[$P{16}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="45" y="580" width="110" height="18" uuid="5840e998-e31b-4626-8381-efe32d6cf77a"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.5"/>
+				</box>
+				<imageExpression><![CDATA[$P{17}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="45" y="92" width="434" height="29" uuid="9dd2c9b5-3960-4dfd-9fb2-c5c413d270a3"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.0"/>
+				</box>
+				<imageExpression><![CDATA[$P{head}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

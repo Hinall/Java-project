@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Twin</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- datatable -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.dataTables.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.3/css/fixedHeader.dataTables.min.css">
+  <!-- Include the CesiumJS JavaScript and CSS files -->
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.115/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">3D TWIN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown_statename" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              select state name
+            </a>
+            <ul class="dropdown-menu" id="state_name_dropdown" aria-labelledby="navbarScrollingDropdown_statename">
+              <!-- list is added dynamically -->
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown_wardId" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              select ward ID
+            </a>
+            <ul class="dropdown-menu" id="wardId_dropdown" aria-labelledby="navbarScrollingDropdown_wardId">
+              <!-- list is added dynamically -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <button type="button" id="findUrl" class="btn btn-info">find</button>
+
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <form id="checkboxForm">
+    <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1">
+    <label for="checkbox1">Checkbox 1</label><br>
+    <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2">
+    <label for="checkbox2">Checkbox 2</label><br>
+      </form>
+  <div id="cesiumContainer">
+  </div>
+  <div>
+    <table id="table_id" class="table table-striped"></table>
+  </div>
+
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.104/Build/Cesium/Cesium.js"></script>
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <!-- datatable -->
+  <script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.datatables.net/2.0.1/js/dataTables.bootstrap5.js"></script>
+  <script sre="https://cdn.datatables.net/fixedheader/3.2.3/js/dataTables.fixedHeader.min.js"></script>
+  <script src="https://cdn.datatables.net/fixedheader/4.0.1/js/dataTables.fixedHeader.js"></script>
+  <script src="https://cdn.datatables.net/fixedheader/4.0.1/js/fixedHeader.bootstrap5.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
